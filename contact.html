@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/5ca15c60cd.js" crossorigin="anonymous"></script>
+    <!-- aos JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Contact | Benedict Anumaka</title>
+    <link rel="shortcut icon" href="/assets/images/FAVICON-BEN.svg" type="image/x-icon">
+</head>
+<body class="font-poppins overflow-x-hidden">
+    <div class="mainFlow min-h-screen">
+        <nav class="container mx-auto flex flex-col space-y-6 px-3 py-3 md:flex-row md:space-y-0 md:justify-between" data-aos="fade-up">
+            <!-- logo and hamburger -->
+            <div class="flex justify-between items-center">
+                <a href="index.html"><h2 class="logo text-black text-2xl tracking-tight uppercase font-bold xl:text-3xl">b<span class="text-accent">a</span></h2></a>
+                <button class="hamburger md:hidden">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+            <!-- links container -->
+            <div class="links-container h-0 overflow-hidden transition-all duration-1000 md:h-auto">
+                <ul class="links flex flex-col space-y-6 justify-center pb-4 mx-auto md:flex-row md:space-y-0 md:justify-between md:items-center md:space-x-8 md:pb-0 lg:space-x-20">
+                    <li class="pl-2 py-3 transition-all duration-300 hover:pl-3 md:hover:scale-110"><a href="index.html" class="capitalize text-darkBlue text-xl font-semibold tracking-tight hover:text-lightBlue">home</a></li>
+                    <li class="pl-2 py-3 transition-all duration-300 hover:pl-3 md:hover:scale-110 md:hover:pl-2"><a href="work.html" class="capitalize text-darkBlue text-xl font-semibold tracking-tight hover:text-lightBlue">work</a></li>
+                    <li class="pl-2 py-3 transition-all duration-300 hover:pl-3 md:hover:scale-110 md:hover:pl-2"><a href="about.html" class="capitalize text-darkBlue text-xl font-semibold tracking-tight hover:text-lightBlue">about</a></li>
+                    <li><a href="contact.html" class=""><button class="px-12 py-2 rounded-md bg-accent text-xl font-normal text-white capitalize transition-all duration-500 hover:text-accent hover:border-2 hover:bg-transparent hover:border-accent hover:font-bold">Contact</button></a></li>
+                </ul>
+            </div>
+        </nav>
+        <main role="main" class="contactMain border-t-2 border-gray-100 grid items-center">
+            <div class="container flex flex-col space-y-6 px-3 py-6 mx-auto md:flex-row md:space-y-0 md:space-x-8 md:items-center">
+                <h2 class="text-xl text-black tracking-wide px-6 font-semibold md:px-0 md:w-1/2 md:text-2xl xl:text-3xl" data-aos="fade-up">
+                    Hello, <img src="/assets/images/wave.gif" alt="wave hand" class="inline h-10 w-10 -mt-3 xl:h-12"> <br> What do you want to do?
+                </h2>
+                <form action="https://getform.io/f/30328b46-a877-4fa4-bc70-cce23b9ef230" method="POST" class="contact-form flex flex-col space-y-6 justify-center bg-white px-6 py-6 rounded-md shadow-lg md:w-1/2 lg:px-20">
+                    <div class="flex flex-col space-y-1" data-aos="zoom-in">
+                        <label for="name" class="text-base text-black tracking-wider capitalize">name:</label>
+                        <input type="text" name="name" class="inputs text-black rounded-md border-2 border-black bg-white px-3 py-2 text-base" required>
+                    </div>
+                    <div class="flex flex-col space-y-1" data-aos="zoom-in">
+                        <label for="email" class="text-base text-black tracking-wider capitalize">email:</label>
+                        <input type="email" name="email" class="inputs text-black rounded-md border-2 border-black bg-white px-3 py-2 text-base" required>
+                    </div>
+                    <div class="flex flex-col space-y-1" data-aos="zoom-in">
+                        <label for="p-type" class="text-base text-black tracking-wider capitalize">product type:</label>
+                        <input type="text" name="p-type" class="inputs text-black rounded-md border-2 border-black bg-white px-3 py-2 text-base" required>
+                    </div>
+                    <div class="flex flex-col space-y-1" data-aos="zoom-in">
+                        <label for="p-desc" class="text-base text-black tracking-wider capitalize">product description:</label>
+                        <input type="text" name="p-desc" class="inputs text-black rounded-md border-2 border-black bg-white px-3 py-2 text-base" required>
+                    </div>
+                    <div class="flex flex-col space-y-1" data-aos="zoom-in">
+                        <label for="budget" class="text-base text-black tracking-wider capitalize">budget <span class="text-lightBlue normal-case">(Please include currency)</span>:</label>
+                        <input type="text" name="budget" class="inputs text-black rounded-md border-2 border-black bg-white px-3 py-2 text-base" required>
+                    </div>
+                    <div class="text-center" data-aos="zoom-in">
+                        <button class="submit-btn px-8 py-2 text-lg tracking-widest text-white rounded-md font-semibold bg-accent" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="bg-white mt-8">
+            <div class="container flex flex-col-reverse space-y-reverse space-y-3 mx-auto items-center justify-center pb-8 md:flex-row md:space-y-0 md:justify-between md:px-8">
+                <p class="text-xs text-lightBlue text-medium tracking-wide capitalize">copyright &copy; <span class="year"></span> b.a, all rights reserved</p>
+                <div class="flex space-x-2 items-center md:space-x-4">
+                    <a href="https://www.behance.net/benedictanumaka" class="text-base text-accent hover:text-lightBlue md:text-lg"><i
+                            class="fa-brands fa-behance"></i></a>
+                    <a href="https://www.linkedin.com/in/benedict-anumaka-22a690156/"
+                        class="text-base text-accent hover:text-lightBlue md:text-lg"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/godmanbeast" class="text-base text-accent hover:text-lightBlue md:text-lg"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ber_ner_dict/" class="text-base text-accent hover:text-lightBlue md:text-lg"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 100,
+            duration: 1000
+        });
+    </script>
+</body>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,500;1,600;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+    background: url("/assets/images/body-img.png") right/cover no-repeat;
+    background-attachment: fixed;
+}
+@media all and (max-width: 712px) {
+    header {
+        background-image: url("/assets/images/body-img-mobile.png");
+        background-position: bottom right;
+        background-attachment: unset;
+    }
+}
+@media all and (max-width: 976px) {
+    header {
+        background-image: url("/assets/images/body-img-tablet.png");
+        background-position: bottom right;
+        background-attachment: unset;
+    }
+}
+input:focus {
+    outline: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.mainFlow {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.contactMain {
+    background: url("/assets/images/body_deco.svg") center/cover no-repeat;
+}
+.hamburger {
+    height: 17px;
+    width: 24px;
+    position: relative;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 3px;
+    background-color: #000;
+    transition: all 1s ease-in-out;
+}
+.hamburger-middle {
+    transform: translateY(7px);
+}
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+.open .hamburger-top {
+    transform: translateY(6px) rotate(45deg);
+}
+.open .hamburger-middle {
+    display: none;
+}
+.open .hamburger-bottom {
+    transform: translateY(6px) rotate(-45deg);
+}
+.next, 
+.prev {
+    cursor: pointer;
+}
+#roles > .txt {
+    border-right: .1rem solid #000033;
+    animation: blink .5s steps(30) infinite;
+}
+@keyframes blink {
+    to {
+        border-color: transparent;
+    }
+}
+.logo:hover {
+    animation: bounce .5s alternate cubic-bezier(.5, .05, 1, .5) infinite;
+}
+@keyframes bounce {
+    to {
+        transform: translateY(30%);
+    }
+}
+.top-link {
+    animation: bounceLink 2s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -50;
+}
+.show-link {
+    visibility: visible;
+    z-index: 50;
+}
+@keyframes bounceLink {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.luta {
+    background: url("/assets/images/beninLuta.jfif") left/cover no-repeat;
+}
